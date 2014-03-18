@@ -4,11 +4,13 @@
       <TITLE>URL Shortener</TITLE>
    </HEAD>
    <BODY>
-      <form action="insert.php" method="post">
-      URL to shorten: <input type="text" name="url"><br>
+   <div align="center">
+      <form action="index.php" method="post">
+<b>URL to shorten: </b><input type="text" name="url"><br>
   
   <input type="submit">
 </form>
+</div>
 <?php
 $con=mysqli_connect("localhost","root","enayat","url_db");
 
@@ -19,14 +21,16 @@ if (mysqli_connect_errno())
 }
 $n= $_SERVER['REQUEST_URI'];
 $short_url= substr($n,1);
-if($short_url==null || $_POST['url']!=null)
+if($short_url==null ||$short_url=='index.php'||$_POST['url']!=null)
 {
 $to_shorten=$_POST['url'];
-echo $to_shorten;
-if($to_shorten!=null)
+
+if($to_shorten!=null )
 {
+echo "Url to Shorten:  ".$to_shorten;
 $shortened='abc';
-echo "Your Shortned Url" .$shortened;
+echo "<br/>";
+echo "Your Shortned Url:  " .$shortened;
 mysqli_query($con,"INSERT INTO shorten (l_url,s_url)
 VALUES ('$to_shorten','$shortened')");
 }
@@ -44,12 +48,14 @@ echo "Generate a new short url";
 while($row = mysqli_fetch_array($result))
   {
    $long_url=$row['l_url'];
-   header("Location: http://www.fb.com");
+   header("Location: http://$long_url");
    exit();
   	
   }
 }
 mysqli_close($con);
+
+
 
 ?>
    </BODY>

@@ -28,7 +28,7 @@ $to_shorten=$_POST['url'];
 if($to_shorten!=null )
 {
 echo "Url to Shorten:  ".$to_shorten;
-$shortened='abc';
+$shortened='abcd';
 echo "<br/>";
 echo "Your Shortned Url:  " .$shortened;
 mysqli_query($con,"INSERT INTO shorten (l_url,s_url)
