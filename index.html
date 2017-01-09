@@ -70,10 +70,10 @@
                 <p align="center">
                   <name>Enayat Ullah</name>
                   </font>
-                <p align>I am a senior undergraduate in depatment of Mathematics and Statistics at <a href="https://wwww.iitk.ac.in/">Indian Intitute of Technology, Kanpur.</a> I am primarily interested in Machine Learning, Natural Language Processing and Optimization.
+                <p align>I am a dual-degree student in depatment of Mathematics and Statistics at <a href="https://wwww.iitk.ac.in/">Indian Intitute of Technology, Kanpur.</a> I am primarily interested in Statistical Machine Learning and Optimization. I am currently working with <a href = "http://www.cse.iitk.ac.in/users/purushot/">Prof. Purushottam Kar</a> on Non-Convex Optimization problems.
                                   <br>
                   <br>
-                  Last summers, I interned at Indiana University Bloomington under <a href="https://www.soic.indiana.edu/all-people/profile.html?profile_id=203">Prof. Geoffrey Fox </a>, wherein I worked on finding approximate solutions to n-body problem, encountered in Multi-dimensional Scaling.
+                  I have undertaken two research internships in the past. In Summer 2016, I worked under the guidance of <a href="www.cs.jhu.edu/~raman/Home.html"> Prof. Raman Arora </a> at Johns Hopkins University on geometrical analysis of Matrix Sensing. Moreover I was also involved in the development of an open-sourced Non-Convex Optimization library in R. In Summer 2015, I interned at Indiana University Bloomington under <a href="https://www.soic.indiana.edu/all-people/profile.html?profile_id=203">Prof. Geoffrey Fox </a>, wherein I worked on finding approximate solutions to an n-body problem, encountered in Deterministic Annealing.
                  
                 <p align=center>
 <a href="mailto:enayat@iitk.ac.in">Email</a> &nbsp/&nbsp
@@ -95,17 +95,100 @@
                 <heading style="font-size:22px">Projects</heading>
               </td>
             </tr>
+
+            <tr >
+        <td width="30%"><img id="img-pgp" src="img/mc.png" alt="project_img" width="160" style="border-style: none">
+            </td>
+
+              <td valign="top" width="70%">
+                <p><a href="files/report_pgp.pdf">
+  <papertitle>Matrix Completion with Implicit Clustering<font color="RED"> (Ongoing)</font></papertitle></a><br>
+                  <em>Supervisors: Dr. Purushottam Kar, Indian Institute of Technology Kanpur</em> <br>
+                  <span style = "padding-left:14%" </span><em>Dr. Prateek Jain, Microsoft Research, India</em><br>
+                <p>Proposed  modifications to the constraints of Matrix Completion (than low
+                rank), which in turn facilitates a clustering over latent representations (items).
+                <br><br>
+               Working on analyzing the sample complexity and convergence guarantees of
+                the Alternating Minimization based solver.
+                <p></p>
+                <a href="files/report_pgp.pdf">report</a> | <a href="files/slides_pgp.pdf">slides</a>
+                </a> </p>
+              </td>
+            </tr>
+
+            <tr >
+        <td width="30%"><img id="img-opt" src="img/opt.jpg" alt="project_img" width="160" style="border-style: none">
+            </td>
+
+              <td valign="top" width="70%">
+                <p><a href="files/report_opt.pdf">
+  <papertitle>Testing for Dictionary Learning <font color="RED"> (Ongoing)</font></papertitle></a><br>
+                  <em>Supervisor: Dr. Purushottam Kar, Indian Institute of Technology Kanpur</em><br>
+                <p>Proposed a deterministic testing routine based on incoherence, which given a set of
+                vectors outputs YES or NO, depending on whether it is possible to learn a dictionary
+                which allows sparse representations or not respectively. 
+                <br><br>
+                Formulating completeness and soundness guarantees of the property testing method
+                based on observed incoherence of samples.             
+                <p></p>
+                <a href="files/report_opt.pdf">report</a> | <a href="files/slides_opt.pdf">poster</a>
+                </a> </p>
+              </td>
+            </tr>
+
+
+             <tr >
+        <td width="30%"><img id="img-opt" src="img/jhu.png" alt="project_img" width="160" style="border-style: none">
+            </td>
+              <td valign="top" width="70%">
+                <p><a href="files/slides_jhu.pdf">
+  <papertitle>Matrix Sensing and Factored Models </papertitle></a><br>
+                  <em>Supervisor: Dr. Raman Arora, Johns Hopkins University</em><br>
+                <p>Investigated the geometry of Matrix Sensing to show that saddle points encountered
+                are unstable and can be eluded owing to spectral characteristics.
+                <br><br>
+                Contributed to an open-source Non-Convex Optimization library in R by implementing
+                Low rank factored models of Matrix Linear and Logistic Regression, Robust PCA
+                and Matrix Completion.
+                <p></p>
+                <a href="files/slides_jhu.pdf">slides</a> | <a href="https://github.com/EnayatUllah/non-convex-optimization-with-R">code</a>
+                </a> </p>
+              </td>
+            </tr>
+
+
+            <tr >
+        <td width="30%"><img id="img-nmt" src="img/nmt.png" alt="project_img" width="160" style="border-style: none">
+            </td>
+
+              <td valign="top" width="70%">
+                <p><a href="files/report_ugp.pdf">
+  <papertitle>Neural Machine Translation with Bilingual Embeddings </papertitle></a><br>
+                  <em>Supervisor: Dr. Amitabha Mukerjee, Indian Institute of Technology Kanpur</em><br>
+                <p>Trained a sequence to sequence learning network with soft attention based on encoder-decoder
+                  LSTMs on Europarl Machine Translation dataset. 
+                <br><br>
+                Tested the Neural Machine Translator plugging Bilingual Embeddings which results
+                in slight improvement in the translational performance metric (BLeU ).
+                <p></p>
+                <a href="files/report_ugp.pdf">report</a> | <a href="files/poster_nlp.pdf">poster</a> | <a href="https://github.com/EnayatUllah/neural-machine-translator">code</a>
+                </a> </p>
+              </td>
+            </tr>
+
+
+
             <tr >
         <td width="30%"><img id="img-olo" src="img/olo.png" alt="project_img" width="160" style="border-style: none">
             </td>
 
               <td valign="top" width="70%">
                 <p><a href="files/report_olo.pdf">
-  <papertitle>An Attempt to Escape the Deep Saddle Points <font color="RED"> (Ongoing)</font></papertitle></a><br>
+  <papertitle>An Attempt to Escape the Deep Saddle Points </papertitle></a><br>
                   <em>Supervisor: Dr. Purushottam Kar, Indian Institute of Technology Kanpur</em><br>
                 <p>Studied non-convex optimization problems like tensor decomposition, and extended the work on generating guarantees for SGD to escape saddle points in theclassical two-layer neural network setting
                 <br><br>
-                Implemented a two-layer neural network whose weights are obtained from tensordecomposition of the strict saddle objective.
+                Implemented a two-layer neural network whose weights are obtained from tensor-decomposition of the strict saddle objective.
                 <p></p>
                 <a href="files/report_olo.pdf">report</a> | <a href="files/slides_nlp.pdf">slides</a>
                 </a> </p>
@@ -117,7 +200,7 @@
 
               <td valign="top" width="70%">
                 <p><a href="files/report_pml.pdf">
-  <papertitle>Label Relation Graphs to Encode Prior Knowledge <font color="RED"> (Ongoing)</font></papertitle></a><br>
+  <papertitle>Label Relation Graphs to Encode Prior Knowledge </papertitle></a><br>
                   <em>Supervisor: Dr. Piyush Rai, Indian Institute of Technology Kanpur</em><br>
                 <p>Formalized the relationships between response categories using Hierarchical and Exclusion edges extracted from Wordnet lexica.
                 <br><br>
@@ -134,7 +217,7 @@
 
               <td valign="top" width="70%">
                 <p><a href="files/report_nlp.pdf">
-	<papertitle>Cross-lingual Plagiarism Detection <font color="RED"> (Ongoing)</font></papertitle></a><br>
+	<papertitle>Cross-lingual Plagiarism Detection </papertitle></a><br>
                   <em>Supervisor: Dr. Amitabha Mukerjee, Indian Institute of Technology Kanpur</em><br>
                 <p>A language and translation independent end to end cross-lingual paraphrase detection module based on joint learning of word vectors in a unified multilingual vector space from document aligned corpora. 
                 <br><br>
