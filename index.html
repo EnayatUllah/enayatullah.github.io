@@ -73,7 +73,7 @@ alt="Web Analytics"></a></div></noscript>
           }
           </script>
 
-<p align>I am a Ph.D. student in the department of Computer Science at <a href="htts://www.jhu.edu"> Johns Hopkins University</a>. I am advised by <a href = "https://www.cs.jhu.edu/~raman">Raman Arora</a> and <a href = "https://www.cs.jhu.edu/~vova">Vladimir Braverman</a>. My research interest is, broadly, in the intersection of Machine Learning, Statistics and Optimization.
+<p align>I am a Ph.D. student in the department of Computer Science at <a href="htts://www.jhu.edu"> Johns Hopkins University</a>, advised by <a href = "https://www.cs.jhu.edu/~raman">Raman Arora</a>. My research interest is, broadly, in the intersection of Machine Learning, Statistics and Optimization.
 <!-- </p> -->
 <!-- <p align> -->
   I graduated from <a href="https://www.iitk.ac.in/"> Indian Intitute of Technology Kanpur</a> with a Bachelors-Masters degree in Mathematics and Computing and minors in Computer Science and English Literature. At IIT Kanpur, I worked with <a href = "http://www.cse.iitk.ac.in/users/purushot/">Purushottam Kar</a>, <a href="http://home.iitk.ac.in/~kundu/kundu.html">Debasis Kundu</a> and  <a href = "http://prateekjain.org">Prateek Jain</a> </p>
@@ -96,10 +96,13 @@ alt="Web Analytics"></a></div></noscript>
 <tr>
 <td>
 <heading >News</heading>
-<ul>
+<ul> 
+	<li><em>Feb 2020.</em> &nbsp Paper on <a href="https://arxiv.org/abs/2002.09609"> Private Stochastic Convex Optimization</a> posted online.</li>
+	<li><em>Jan-April 2020.</em> &nbsp Visting the Institute for Advanced Study, Princeton. </li>
+	<li><em>Aug 2019.</em> &nbsp Paper on <a href="https://arxiv.org/abs/1808.00934"> distributed SGD </a> accepted at NeurIPS 2019.</li>
   <li><em>July 2019.</em> &nbsp Paper on <a href="https://arxiv.org/abs/1907.07574">  time-decay streams</a> accepted at <a href="https://approxconference.wordpress.com/"> APPROX 2019 </a>.</li>
-  <li><em>Feb 2019.</em> &nbsp Paper on <a href="https://arxiv.org/abs/1808.00934"> distributed SGD </a>  posted online</li>
-  <li><em>August 2018.</em> &nbsp Paper on <a href="https://arxiv.org/abs/1808.00934"> Streaming Kernel PCA </a> accepted at NeurIPS 2019.</li>
+  <!-- <li><em>Feb 2019.</em> &nbsp Paper on <a href="https://arxiv.org/abs/1808.00934"> distributed SGD </a>  posted online</li> -->
+  <li><em>Aug 2018.</em> &nbsp Paper on <a href="https://arxiv.org/abs/1808.00934"> Streaming Kernel PCA </a> accepted at NeurIPS 2018.</li>
 
 </ul>
 </td>
@@ -120,13 +123,69 @@ alt="Web Analytics"></a></div></noscript>
 
 
 
-
 <tr bgcolor="#ffffd0">
+<td valign="top" width="100%">
+<p><a href="">
+<papertitle>Private Stochastic Convex Optimization: Efficient Algorithms for Non-smooth Objectives</papertitle></a>
+<br>Raman Arora, Teodor V Marinov, <b>Enayat Ullah</b> <em>(\( \alpha\)-\(\beta\) order)</em> <br>
+<!-- <em>To appear at APPROX 2019</em> -->
+  <br> <a href = "https://arxiv.org/abs/2002.09609">arXiv</a>  &nbsp|&nbsp 
+<a id ="show_private" >Show abstract</a><br>
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#show_private").click(function () {
+        // var $this = $(this);
+        $("#abstract_private").toggle();
+         $(this).text(function(i, v){
+       return v === 'Show abstract' ? 'Hide abstract' : 'Show abstract'
+    });
+    });
+});
+</script>
+<div id="abstract_private" style="display:none">
+In this paper, we revisit the problem of private stochastic convex optimization. We propose an algorithm, based on noisy mirror descent, which achieves optimal rates up to a logarithmic factor, both in terms of statistical complexity and number of queries to a first-order stochastic oracle. Unlike prior work, we do not require Lipschitz continuity of stochastic gradients to achieve optimal rates. Our algorithm generalizes beyond the Euclidean setting and yields anytime utility and privacy guarantees.
+</div>
+</p>
+</td>
+</tr>
+
+
+
+<tr >
+<td valign="top" width="100%">
+<p><a href="">
+<papertitle>Communication-efficient Distributed SGD with Sketching</papertitle></a>
+<br>Nikita Ivkin, Daniel Rothchild, <b>Enayat Ullah</b>, Vladimir Braverman, Ion Stoica, Raman Arora<br>
+<em>Published at NeurIPS 2019</em>
+<br> <a href = "https://arxiv.org/abs/1808.00934">arXiv</a>  &nbsp|&nbsp 
+<a href = "files/sketchSGD.pdf">pdf</a> &nbsp|&nbsp 
+<a id ="show_sketch_sgd" >Show abstract</a><br>
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#show_sketch_sgd").click(function () {
+        // var $this = $(this);
+        $("#abstract_sketch_sgd").toggle();
+         $(this).text(function(i, v){
+       return v === 'Show abstract' ? 'Hide abstract' : 'Show abstract'
+    });
+    });
+});
+</script>
+<div id="abstract_sketch_sgd" style="display:none">
+<p>
+Large-scale distributed training of neural networks is often limited by network bandwidth, wherein the communication time overwhelms the local computation time. Motivated by the success of sketching methods in sub-linear/streaming algorithms, we introduce Sketched-SGD, an algorithm for carrying out distributed SGD by communicating sketches instead of full gradients. We show that Sketched-SGD has favorable convergence rates on several classes of functions. When considering all communication -- both of gradients and of updated model weights -- Sketched-SGD reduces the amount of communication required compared to other gradient compression methods from $O(d)$ or $O(W)$ to $O(\log d)$, where $d$ is the number of model parameters and $W$ is the number of workers participating in training. We run experiments on a transformer model, an LSTM, and a residual network, demonstrating up to a 40x reduction in total communication cost with no loss in final model performance. We also show experimentally that Sketched-SGD scales to at least 256 workers without increasing communication cost or degrading model performance.
+</p>
+</div>
+</td>
+</tr>
+
+
+<tr >
 <td valign="top" width="100%">
 <p><a href="">
 <papertitle>Improved Algorithms for Time-Decay Streams</papertitle></a>
 <br>Vladimir Braverman, Harry Lang, <b>Enayat Ullah</b>, Samson Zhou <em>(\( \alpha\)-\(\beta\) order)</em> <br>
-<em>To appear at APPROX 2019</em>
+<em>Published at APPROX 2019</em>
   <br> <a href = "https://arxiv.org/abs/1808.00934">arXiv</a>  &nbsp|&nbsp 
 <a id ="show_time_decay" >Show abstract</a><br>
 <script type="text/javascript">
@@ -155,7 +214,7 @@ We also consider the exponential time decay model for k-median clustering, where
 <papertitle>Streaming Kernel PCA with \(\tilde O(\sqrt{n})\) Random Features</papertitle></a>
 <!-- <br><span class="highlight">Enayat Ullah</span>, Poorya Mianjy, Teodor V Marinov, Raman Arora<br> -->
 <br><b>Enayat Ullah</b>, Poorya Mianjy, Teodor V Marinov, Raman Arora<br>
-<em>Neural Information Processing Systems (NIPS), 2018 </em>
+<em>Published at NuerIPS 2018 </em>
 <br> <a href = "https://arxiv.org/abs/1808.00934">arXiv</a>  &nbsp|&nbsp 
 <a id ="show_kernel_pca" >Show abstract</a><br>
 <script type="text/javascript">
@@ -198,33 +257,6 @@ $(document).ready(function () {
 </tr> -->
 
 
-<tr >
-<td valign="top" width="100%">
-<p><a href="">
-<papertitle>Communication-efficient Distributed SGD with Sketching</papertitle></a>
-<br>Nikita Ivkin, Daniel Rothchild, <b>Enayat Ullah</b>, Vladimir Braverman, Ion Stoica, Raman Arora<br>
-<em>(Under Submission)</em>
-<br> <a href = "https://arxiv.org/abs/1808.00934">arXiv</a>  &nbsp|&nbsp 
-<a href = "files/sketchSGD.pdf">pdf</a> &nbsp|&nbsp 
-<a id ="show_sketch_sgd" >Show abstract</a><br>
-<script type="text/javascript">
-$(document).ready(function () {
-    $("#show_sketch_sgd").click(function () {
-        // var $this = $(this);
-        $("#abstract_sketch_sgd").toggle();
-         $(this).text(function(i, v){
-       return v === 'Show abstract' ? 'Hide abstract' : 'Show abstract'
-    });
-    });
-});
-</script>
-<div id="abstract_sketch_sgd" style="display:none">
-<p>
-Large-scale distributed training of neural networks is often limited by network bandwidth, wherein the communication time overwhelms the local computation time. Motivated by the success of sketching methods in sub-linear/streaming algorithms, we introduce Sketched-SGD, an algorithm for carrying out distributed SGD by communicating sketches instead of full gradients. We show that Sketched-SGD has favorable convergence rates on several classes of functions. When considering all communication -- both of gradients and of updated model weights -- Sketched-SGD reduces the amount of communication required compared to other gradient compression methods from $O(d)$ or $O(W)$ to $O(\log d)$, where $d$ is the number of model parameters and $W$ is the number of workers participating in training. We run experiments on a transformer model, an LSTM, and a residual network, demonstrating up to a 40x reduction in total communication cost with no loss in final model performance. We also show experimentally that Sketched-SGD scales to at least 256 workers without increasing communication cost or degrading model performance.
-</p>
-</div>
-</td>
-</tr>
 
 <!-- <tr >
 <td valign="top" width="100%">
