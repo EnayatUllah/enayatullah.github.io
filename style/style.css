@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Literata');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Strong');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 @import url('https://fonts.googleapis.com/css?family=Sacramento');
@@ -16,29 +19,29 @@
       text-decoration:none;
       }
       body,td,th{
-      font-family: Lato,'Arvo',sans-serif;
-      /*font-family: Literata, Lato, Verdana, Helvetica, sans-serif;*/
+/*      font-family: Lato,'Arvo',sans-serif;*/
+      font-family: Lato, Montserrat, Helvetica, sans-serif;
       font-size: 14px
       }
       strong {
-      font-family: Lato, Literata, Lato, Verdana, Helvetica, sans-serif;
+      font-family: Lato, Montserrat Condensed, Lato, Literata, Lato, Verdana, Helvetica, sans-serif;
       font-size: 22px;
       }
       heading {
-      /*font-family: 'Literata','Lato', Verdana, Helvetica;*/
-      font-family:Roboto Condensed, Literata, Lato, Verdana, Helvetica, sans-serif;
+/*      font-family: 'Literata','Lato', Verdana, Helvetica;*/
+      font-family:Lato,Montserrat, Roboto Condensed, Literata, Lato, Verdana, Helvetica, sans-serif;
       font-size: 28px;
       }
       papertitle {
-      font-family: Literata, Helvetica, Lato,Literata, Lato, Verdana, Helvetica, sans-serif;
+      font-family: Lato,Montserrat, Roboto, Literata, Helvetica, Lato,Literata, Lato, Verdana, Helvetica, sans-serif;
       font-size: 16px;
       font-weight: 700
       }
       name {
-      font-family: Roboto Condensed,Lato, Oswald,Shadows Into Light,Sacramento,Dosis,Oswald,Roboto Condensed, Lato, Verdana, Helvetica, sans-serif;
-      font-size: 36px;
-      /*color: grey */
-      /*font-weight: 200*/
+      font-family: Lato,Montserrat, Roboto Condensed, Lato, Oswald,Shadows Into Light,Sacramento,Dosis,Oswald,Roboto Condensed, Lato, Verdana, Helvetica, sans-serif;
+      font-size: 28px;
+      color: grey
+      font-weight: 200
       }
 	.fade {
 	   transition: opacity .2s ease-in-out;
